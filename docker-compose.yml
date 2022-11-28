@@ -1,0 +1,16 @@
+version: "3"
+services:
+  trainer:
+    build: .
+    container_name: jeonglab-flash
+    volumes:
+      - ./:/app
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    tty: true
+    shm_size: '16gb'

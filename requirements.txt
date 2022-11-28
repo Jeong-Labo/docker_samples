@@ -1,0 +1,10 @@
+jupyter
+notebook
+jupyterlab
+jupyter-contrib-nbextensions
+
+sahi<0.11
+icevision[all]
+effdet
+pytorch-lightning
+lightning-flash[image]
